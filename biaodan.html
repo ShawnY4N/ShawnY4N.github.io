@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/biaodan.css">
+    <title>Resume Submission</title>
+</head>
+<body>
+    <header>
+        <h1>留言你的祝福吧</h1>
+    </header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="poem.html">我的诗集</a>
+        <a href="resume.html">个人简历</a>
+        <a href="school.html">文艺世界</a>
+    </nav>
+
+    <!-- 这个留言版我结合了js部分 可以直接在网页留痕 -->
+    <h1>网页留言板</h1>
+    <form id="messageForm">
+        <label for="message">写下你对行之的留言吧:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">立刻生成</button>
+    </form>
+    <div id="messages"></div>
+    <!-- 这是一个表单留言版 -->
+     <h1>写信给我噢</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">你的名字:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">你的Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="experience">我们一起经历了什么:</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+        </div>
+        <input type="submit" value="提交信件">
+    </form>
+    
+   
+    <!-- 拓展部分 script 可以实现直接在我的网页上留言 同时可以删除 -->
+    <script>
+        const form = document.getElementById('messageForm');
+        const messageContainer = document.getElementById('messages');
+
+        form.onsubmit = function(event) {
+            event.preventDefault();
+            const messageText = document.getElementById('message').value;
+            if (messageText.trim()) {
+                addMessage(messageText);
+                document.getElementById('message').value = ''; 
+                // 提交了之后清除输入框
+            }
+        };
+
+        function addMessage(text) {
+            const messageElement = document.createElement('div');
+            messageElement.className = 'message';
+            messageElement.innerHTML = `
+                <span>${text}</span>
+                <span class="delete-btn" onclick="deleteMessage(this)">[删除留言]</span>
+            `;
+            messageContainer.appendChild(messageElement);
+        }
+
+        function deleteMessage(element) {
+            // 删除留言的代码
+            messageContainer.removeChild(element.parentNode);
+        }
+    </script>
+    <footer>
+        <p>Ysh © 2024</p>
+    </footer>
+</body>
+</html>

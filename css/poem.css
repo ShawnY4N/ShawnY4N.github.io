@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+header, footer {
+    background: url('../images/piqsels.com-id-svkno.jpg');
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+#nav {
+    background: url('../images/piqsels.com-id-zbzvb.jpg');
+    background-color: #444;
+    height: 50px;
+    overflow: hidden;
+}
+/* 设置导航链接的样式 */
+#nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+/* 鼠标悬停在导航链接上时的样式 */
+#nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* 使用Grid网格布局创建一个16个盒子的网格，每行4个盒子 */
+.grid-container {
+    background: url('../images/piqsels.com-id-jivyx.jpg');
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+.grid-item {
+    font-style: italic;
+    line-height: 150%;
+    background-color: #fff;
+    padding: 20px;
+    color: #333;
+    border: 2px solid #777;
+}
+/* 鼠标悬浮在网格上面会放大 */
+.grid-item:hover {
+    transform: scale(1.2)
+}

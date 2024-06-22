@@ -1,0 +1,222 @@
+/* 基于中南财经政法大学官网的页面css进行全方位改进 */
+body {
+    background-color: #333;
+    margin: 0%;
+}
+.inner {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background: url('../images/piqsels.com-id-svkno.jpg');
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+#nav {
+    background: url('../images/piqsels.com-id-fvwqc.jpg');
+    background-color: #444;
+    height: 50px;
+    overflow: hidden;
+}
+/* 设置导航链接的样式 */
+#nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: 200;
+    text-decoration: none;/*取消掉导航的下划线*/
+}
+
+/* 鼠标悬停在导航链接上时的样式 */
+#nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#footer {
+    background: url('../images/piqsels.com-id-svkno.jpg');
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#container1 {
+    background: url('../images/piqsels.com-id-jivyx.jpg');
+    background-color: #111111;
+    height: 300px;
+    width: 100%;
+    
+   
+}
+
+#con_1_1 {
+    height: 280px;
+    width: 475px;
+    margin: 10px;
+    float: left;
+    border-radius: 40px; /* 设置圆角半径 */
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#con_1_2 {
+    height: 280px;
+    width: 475px;
+    margin: 10px;
+    float: left;
+    border-radius: 40px; /* 设置圆角半径 */
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container2 {
+    background: url('../images/piqsels.com-id-jivyxx.jpg');
+    background-color: #333;
+    height: 500px;
+}
+
+
+
+#con_2_1 {
+    height: 356px;
+    width: 312px;
+    margin-top: 40px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#con_2_2 {
+    background-color: aliceblue;
+    height: 356px;
+    width: 656px;
+    border-radius: 30px;
+    margin-top: 70px;
+    margin-left: 32px;
+    float: left;
+}
+#container3 {
+    background-color: #111111;
+    height: 350px;
+    background: url('../images/piqsels.com-id-svkno.jpg');
+   
+}
+
+#con_3_1 {
+    height: 285px;
+    width: 450px;
+    border-radius: 30px;
+    float: left;
+    background-color: #444;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#con_3_2 {
+    height: 285px;
+    width: 450px;
+    margin-top: 30px;
+    border-radius: 30px;
+    float: left;
+    margin-left: 50px;
+    background-color: aliceblue;
+}
+
+#container4 {
+    background: url('../images/piqsels.com-id-jivyx.jpg');
+    background-color: #333;
+    height: 550px;
+}
+
+
+
+#con_4_1 {
+    height: 380px;
+    width: 312px;
+    margin-top: 70px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#con_4_2 {
+    background-color: aliceblue;
+    height: 380px;
+    width: 300px;
+    margin-top: 70px;
+    margin-left: 16px;
+  
+    float: left;
+}
+#con_4_3 {
+    background-color: aliceblue;
+    height: 430px;
+    width: 350px;
+    border-radius: 30px;
+    margin-top: 70px;
+    float: right;
+}
+
+/* 鼠标悬浮在图片表面会放大 */
+.image {
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+/* 不同段落位置的字体css */
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: smaller;
+}
+.caption2 {
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline
+    
+}
+.caption3 {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    line-height: 45px;
+    font-weight: 200;
+    text-decoration: underline;
+}
+.caption4 {
+    text-align: center;
+    font-style: italic;
+    line-height: 40px;
+    font-weight: 200;
+    
+}
